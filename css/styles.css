@@ -1,0 +1,205 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  color: #88a779;
+  background-color: #fefefe;
+}
+a {
+  text-decoration: none;
+  color: #57a6aa;
+}
+ul {
+  list-style: none;
+}
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+h1, h2 {
+  margin-bottom: 20px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Navigation */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.navbar a {
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #b3ca52;
+  color: white;
+  padding: 100px 20px;
+  text-align: center; /* fallback center */
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
+  gap: 40px;               /* spacing between image and text */
+  flex-wrap: wrap;         /* wrap on smaller screens */
+}
+
+.hero-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; /* makes image circular */
+  border: 4px solid white; /* optional white border for contrast */
+  flex-shrink: 0;
+}
+
+.hero-text {
+  max-width: 600px;
+  text-align: left; /* align text left next to image */
+}
+
+/* Responsive tweak for small screens */
+@media (max-width: 600px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.btn {
+  background: white;
+  color: #025b40;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #e3f2fd;
+}
+.btn-secondary {
+  background: #f1cd37;
+  color: #000;
+}
+
+/* Infographic Style */
+.infographic {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+/*Call to action buttons*/
+.cta-buttons {
+  margin-top: 20px; /* Adjust this value as needed */
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* Initiatives Cards */
+.filters {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.filters button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.filters button:hover {
+  background: #d0d0d0;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.cards .card {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Support Cards */
+.support-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+.support-options div {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+}
+
+/* Blog Entries */
+.blog-entries {
+  display: grid;
+  gap: 15px;
+}
+
+/* Newsletter */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, textarea, button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+button[type="submit"] {
+  background: #025b40;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #025b40;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+footer a {
+  color: #ccc;
+}
+
